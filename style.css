@@ -358,3 +358,26 @@ input::placeholder {
     
     width: 65%;
 }
+
+#customers-section{
+    width: 100%;
+    height: 100vh;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+#customers-section :first-child{
+    text-align: center ;
+    width: 44%;
+    margin: 0 auto;
+
+}
+
+#customers-section :first-child :last-child{
+    font-size: 16px;
+    color: var(--faint-text-color);
+}
+

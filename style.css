@@ -262,5 +262,99 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    margin: 30px 0;
+}
+
+#Enterprise-section{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--second-bg-color);
+    margin: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Enterprise{
+    width: 65%;
+    padding: 96px 0 ;
+}
+
+#Enterprise-boxes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin: 48px 0;
+    width: 65%;
+}
+
+.Enterprise-box p:first-of-type{
+    margin: 32px 0 16px 0;
+}
+
+.Enterprise-box p:last-of-type{
+    color: var(--faint-text-color);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#customer-story{
+    background-image: url(assets/anthropic-customer-story.svg);
+    width: 70%;
+    margin: 50px auto 0 auto;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 1020px;
+    height: 518px;
+    padding: 64px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.story-card{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.story-card div{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+#customer-story :last-child{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#customer-story :last-child div{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 4px;
+    width: 200px;
+    /* background-color: red; */
+}
+
+#customer-story :last-child div :last-child{
+    color: var(--faint-text-color);
+    font-size: 14px;
+}
+
+#company-logos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto 50px auto;
     
+    width: 65%;
 }

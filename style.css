@@ -172,3 +172,23 @@ input::placeholder {
     border-right: 2px solid var(--hero-bg-color);
     border-top: 2px solid var(--hero-bg-color);
 }
+
+#companies{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    row-gap: 8px;
+    column-gap: 28px;
+    margin: 100px auto;
+    width: 1024px;
+    height: 156px;
+}
+
+.company{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 64px;
+}
+

@@ -2,12 +2,14 @@
 :root{
     --background-color: #08090a;
     --second-bg-color: #151616;
+    --hero-bg-color: lab(100 0 0 / 0.15);
     --text-color: #ffffff;
     --faint-text-color: lab(100 0 0 / 0.7);
     --border-color: rgb(255, 255, 255);
     --black-text-color: lab(2.42579 -0.165291 -0.470081);
     --button-white-bg: lab(100 0 0);
     --button-black-bg: lab(100 0 0 / 0.05);
+
 }
 
 *{
@@ -21,7 +23,7 @@
 body {
     background-color: var(--background-color);
     color: var(--text-color);
-    
+    width: 100%;
     position: relative;
 }
 
@@ -29,7 +31,8 @@ header{
     width: 100%;
     min-height: 100vh;
     background-repeat: no-repeat;
-    background-position:center center;
+    background-position: center -120px ;
+    /* background-position-y: 50%; */
     background-size: cover;
     background-image: url("assets/hero/bg-dark.svg");
 }
@@ -40,17 +43,21 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1056px;
+    width: 72%;
     margin: 0 auto;
     padding: 16px 24px;
-    background-color: transparent;
-    backdrop-filter: 12px;
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 100;
+    backdrop-filter:calc(12px); 
+    
 
+}
+
+.navbar{
+    background-color: transparent;
+    backdrop-filter: blur(12px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    
 }
 
 ul{
@@ -66,6 +73,12 @@ button{
     border-radius: 2.68435e+07px;
     border: none;
     outline: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.btn-height{
+    height: 33.1px;
 }
 
 nav div:first-child{
@@ -90,4 +103,72 @@ nav div:last-child button{
 nav div:last-child button:first-child{
     background-color: var(--button-black-bg);
     color: var(--text-color);
+}
+
+.highlighted-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: max-content;
+    margin: 40px auto;
+    background-color: var(--hero-bg-color);
+    padding: 4px 8px 4px 4px;
+    border-radius:60px;
+}
+
+#Hero-section{
+    text-align: center;
+    margin: 80px auto;
+    width: max-content;
+}
+
+#Hero-section h1{
+    width: 688px;
+    font-size: 61.28px;
+    line-height: 70.472px;
+    letter-spacing: -1.2256px;
+
+}
+
+#Hero-section p{
+    margin: 24px auto;
+    width: 472px;
+    font-size: 18px;
+}
+
+#Hero-section div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    background-color: var(--hero-bg-color);
+    width: max-content;
+    margin:0 auto;
+    padding: 8px 16px;
+    border-radius: 60px;
+}
+
+#Hero-section div input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+input::placeholder {
+  color: var(--faint-text-color);
+}
+
+#hero-img {
+    display: flex;
+    justify-content: center;
+    margin: 80px 0;
+}
+#hero-img img{
+    border-radius:28px 28px 0 0;
+    border-left: 2px solid var(--hero-bg-color);
+    border-right: 2px solid var(--hero-bg-color);
+    border-top: 2px solid var(--hero-bg-color);
 }

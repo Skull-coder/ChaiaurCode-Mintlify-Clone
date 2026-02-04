@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root{
+    --background-color: #08090a;
+    --second-bg-color: #151616;
+    --text-color: #ffffff;
+    --faint-text-color: lab(100 0 0 / 0.7);
+    --border-color: rgb(255, 255, 255);
+    --black-text-color: lab(2.42579 -0.165291 -0.470081);
+    --button-white-bg: lab(100 0 0);
+    --button-black-bg: lab(100 0 0 / 0.05);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    
+    
+}

@@ -3,7 +3,7 @@
 A desktop-first, HTML and CSS recreation of the Mintlify documentation platform website. This project focuses on content structure, readability, and layout accuracy without any JavaScript, animations, or responsive design.
 
 ## Project Preview
-![alt text](image.png)
+![alt text](image-1.png)
 
 ## 📋 Project Overview
 
